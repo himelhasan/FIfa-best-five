@@ -28,7 +28,13 @@ function choosePlayer(element) {
     playerImage: playerImage,
   };
 
-  totalPlayerArray.push(playerInfo);
+  if (totalPlayerArray.length < 5) {
+    totalPlayerArray.push(playerInfo);
+  } else {
+    // totalPlayerArray.pop(playerInfo);
+    topPlayersList.removeChild(div);
+    alert("too many players");
+  }
 }
 
 let inputnum = document.getElementById("Per-Players-Budget").value;
