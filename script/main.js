@@ -70,3 +70,17 @@ function calculateTotal(element) {
   let calculateTotalCost = totalPlayersExpenses + managerBudget + coachBudget;
   setValue("total-cost", calculateTotalCost);
 }
+
+function isitnan(value) {
+  document.getElementById(value).addEventListener("keyup", function () {
+    if (isNaN(this.value) || this.value.length < 0) {
+      alert("That was not a number!");
+      this.value = "";
+      return false;
+    }
+  });
+}
+
+isitnan("Per-Players-Budget");
+isitnan("Manager-Budget");
+isitnan("Coach-Budget");

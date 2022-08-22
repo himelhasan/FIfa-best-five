@@ -171,8 +171,9 @@
                 </p>
                 <div class="card-actions justify-start">
                   <button
-                    class="btn bg-blue-800 w-full my-4 rounded"
-                    onclick="choosePlayer(this)"
+                    id="addtolist"
+                    class="btn bg-blue-800 w-full my-4 rounded addtolist disabled:bg-blue-900 disabled:text-slate-400"
+                    onclick="choosePlayer(this); this.disabled=true"
                   >
                     <i class="fa-solid fa-plus pr-2"></i>Add to list
                   </button>
@@ -202,8 +203,8 @@
                 </p>
                 <div class="card-actions justify-start">
                   <button
-                    class="btn bg-blue-800 w-full my-4 rounded"
-                    onclick="choosePlayer(this)"
+                    class="btn bg-blue-800 w-full my-4 rounded addtolist disabled:bg-blue-900 disabled:text-slate-400"
+                    onclick="choosePlayer(this); this.disabled=true"
                   >
                     <i class="fa-solid fa-plus pr-2"></i>Add to list
                   </button>
@@ -230,8 +231,8 @@
                 </p>
                 <div class="card-actions justify-start">
                   <button
-                    class="btn bg-blue-800 w-full my-4 rounded"
-                    onclick="choosePlayer(this)"
+                    class="btn bg-blue-800 w-full my-4 rounded addtolist disabled:bg-blue-900 disabled:text-slate-400"
+                    onclick="choosePlayer(this); this.disabled=true"
                   >
                     <i class="fa-solid fa-plus pr-2"></i>Add to list
                   </button>
@@ -258,8 +259,8 @@
                 </p>
                 <div class="card-actions justify-start">
                   <button
-                    class="btn bg-blue-800 w-full my-4 rounded"
-                    onclick="choosePlayer(this)"
+                    class="btn bg-blue-800 w-full my-4 rounded addtolist disabled:bg-blue-900 disabled:text-slate-400"
+                    onclick="choosePlayer(this); this.disabled=true"
                   >
                     <i class="fa-solid fa-plus pr-2"></i>Add to list
                   </button>
@@ -286,8 +287,8 @@
                 </p>
                 <div class="card-actions justify-start">
                   <button
-                    class="btn bg-blue-800 w-full my-4 rounded"
-                    onclick="choosePlayer(this)"
+                    class="btn bg-blue-800 w-full my-4 rounded addtolist disabled:bg-blue-900 disabled:text-slate-400"
+                    onclick="choosePlayer(this); this.disabled=true"
                   >
                     <i class="fa-solid fa-plus pr-2"></i>Add to list
                   </button>
@@ -314,8 +315,8 @@
                 </p>
                 <div class="card-actions justify-start">
                   <button
-                    class="btn bg-blue-800 w-full my-4 rounded"
-                    onclick="choosePlayer(this)"
+                    class="btn bg-blue-800 w-full my-4 rounded addtolist disabled:bg-blue-900 disabled:text-slate-400"
+                    onclick="choosePlayer(this); this.disabled=true"
                   >
                     <i class="fa-solid fa-plus pr-2"></i>Add to list
                   </button>
@@ -354,7 +355,7 @@
                 <label class="input-group input-group-vertical">
                   <span class="p-2">Per Players Budget</span>
                   <input
-                    type="number"
+                    type="text"
                     class="input input-bordered"
                     id="Per-Players-Budget"
                   />
@@ -372,11 +373,11 @@
               <div class="form-control">
                 <label class="input-group input-group-vertical my-2">
                   <span class="p-2">Manager Budget</span>
-                  <input type="number" class="input input-bordered" id="Manager-Budget" />
+                  <input type="text" class="input input-bordered" id="Manager-Budget" />
                 </label>
                 <label class="input-group input-group-vertical my-2">
                   <span class="p-2">Coach Budget</span>
-                  <input type="number" class="input input-bordered" id="Coach-Budget" />
+                  <input type="text" class="input input-bordered" id="Coach-Budget" />
                 </label>
                 <button
                   class="btn bg-blue-800 w-100 my-4 rounded"
