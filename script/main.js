@@ -33,7 +33,7 @@ function choosePlayer(element) {
   } else {
     // totalPlayerArray.pop(playerInfo);
     topPlayersList.removeChild(div);
-    alert("too many players");
+    alert("Too many players! You cant add more than 5 players");
   }
 }
 
@@ -90,3 +90,14 @@ function isitnan(value) {
 isitnan("Per-Players-Budget");
 isitnan("Manager-Budget");
 isitnan("Coach-Budget");
+
+function isEmpty(elementid) {
+  let inputValueCheck = document.getElementById(elementid).value;
+
+  console.log();
+  if (inputValueCheck.length != 0) {
+  } else {
+    alert("Please input your amount");
+    console.log(inputValueCheck);
+  }
+}
