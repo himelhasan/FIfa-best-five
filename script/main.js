@@ -63,7 +63,6 @@ function additionCalculate(element) {
   let perPlayersBudgetText = getInputTotal("Per-Players-Budget");
   let numberOfPlayers = totalPlayerArray.length;
   let totalCost = numberOfPlayers * perPlayersBudgetText;
-
   setValue("player-total-cost", totalCost);
   return totalCost;
 }
